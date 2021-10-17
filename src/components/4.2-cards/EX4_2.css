@@ -1,0 +1,18 @@
+.buttons {
+  width: 100%;
+}
+.buttons button {
+  color: yellowgreen;
+  margin: 0 1rem;
+  padding: 1rem;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+}
+.buttons button:hover {
+  cursor: pointer;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
