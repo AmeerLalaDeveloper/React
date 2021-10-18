@@ -1,6 +1,19 @@
+import React from 'react';
 import Box from './Box'
-const Index = () => {
-    return ( 
+// const Index = () => {
+   
+// }
+ 
+
+
+class Index extends React.Component{
+
+    constructor(props){
+        super(props)
+        }
+    render(){
+
+ return ( 
         <div>
             <Box>
         <div className="box-1 flex">
@@ -12,6 +25,5 @@ const Index = () => {
             </Box>
         </div>
      );
-}
- 
-export default Index;
+    }
+}export default Index;

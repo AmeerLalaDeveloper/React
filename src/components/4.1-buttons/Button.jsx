@@ -1,6 +1,23 @@
+import React from "react";
+// const Button = (props) => {
 
-const Button = (props) => {
-    return <button value={props.val}>{props.val}</button>        
-}
+// }
  
+
+
+class Button extends React.Component{
+
+    constructor(props){
+        super(props)
+        this.props=props;
+        
+       
+    }
+    render(){
+    return (
+    <button value={this.props.val}>{this.props.val}</button>       
+     )
+    }
+
+}
 export default Button;
