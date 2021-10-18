@@ -2,8 +2,10 @@ import './App.css';
 // import EX1 from './components/3.1-boxes/EX1'
 // import Quiz from './components/3.2-quiz/Quiz'
 // import EX4_1 from './components/4.1-buttons/EX4_1';
-import Card from './components/4.2-cards/Card';
-import Buttons from './components/4.2-cards/Buttons';
+// import Card from './components/4.2-cards/Card';
+// import Buttons from './components/4.2-cards/Buttons';
+// import Counter from './components/7.1-increment/Counter'
+import Box from './components/7.2-hide_and_seek/Box';
 function App() {
 
   return (
@@ -11,7 +13,7 @@ function App() {
       {/* <EX1></EX1> */}
         {/* <Quiz></Quiz> */}
         {/* <EX4_1 /> */}
-        <Card img ="https://source.unsplash.com/random" title="img1" description="First Image" >
+        {/* <Card img ="https://source.unsplash.com/random" title="img1" description="First Image" >
           <Buttons></Buttons>
           </Card>
         <Card  img ="https://source.unsplash.com/weekly?water
@@ -20,8 +22,9 @@ function App() {
           </Card>
         <Card  img ="https://source.unsplash.com/daily" title="img3" description="Third Image" >
          <Buttons></Buttons>
-          </Card>
-
+          </Card> */}
+    {/* <Counter></Counter> */}
+    <Box></Box>
     </div>
   );
 }
