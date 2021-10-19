@@ -10,7 +10,7 @@ import './App.css';
 // import BoxAnimation from './components/8.1.2-box_animation/BoxAnimation'
 // import Box from './components/8.2-changing_box/Box';
 // import Spinner from './components/9.1-spinner/Spinner';
-import Main from './components/12.1-chuck_norris/Main';
+import ChuckNorris from './components/12.1-chuck_norris/ChuckNorris';
 function App() {
 
   return (
@@ -34,7 +34,7 @@ function App() {
     {/* <BoxAnimation></BoxAnimation> */}
     {/* <Box></Box> */}
     {/* <Spinner></Spinner> */}
-    <Main></Main>
+    <ChuckNorris></ChuckNorris>
     </div>
   );
 }

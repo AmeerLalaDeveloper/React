@@ -24,12 +24,75 @@ body {
 .container {
   width: 80%;
   height: 90vh;
-  background: rgb(238, 235, 235);
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(241, 238, 238);
   padding: 2rem;
+  box-shadow: 0 0 25px #000;
 }
 .result {
-  margin: 1rem 0;
-  display: block;
-  font-size: 1.5rem;
+  margin: 3rem auto;
+  font-size: 1.75rem;
+  width: 80%;
   color: green;
+}
+.btn,
+select {
+  border: none;
+  padding: 1rem;
+  font-size: 1.35rem;
+  background: lightblue;
+  border-radius: 10px;
+  margin: 1rem;
+  display: block;
+  width: 40%;
+  color: gray;
+}
+option {
+  display: block;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: lightblue;
+  background: transparent;
+  outline: 2px solid #000;
+
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 5px gray;
+}
+select {
+  padding: 1rem;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.box span {
+  padding: 1rem;
+  width: 60%;
+  display: block;
+  font-size: 1.25rem;
+  text-align: left;
+}
+#myForm {
+  margin: 1rem 0;
+  width: 70%;
+  padding: 1rem 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+input {
+  width: 90%;
+  display: block;
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background: lightblue;
+  border-radius: 10px;
 }

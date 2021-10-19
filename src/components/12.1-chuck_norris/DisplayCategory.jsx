@@ -20,7 +20,7 @@ class DisplayCategory extends React.Component {
        this.setState({
 
            options: <select name="selector" onChange={()=>{
-               this.props.select(document.querySelector('select').value)
+               this.props.select('?category='+document.querySelector('select').value)
            }} id="selector">
            {
               this.state.categoriesNames.map((item,idx)=>{
@@ -33,11 +33,10 @@ class DisplayCategory extends React.Component {
     }
     render(){
     return (
-            <>
-         
+            <div className="box">
+       <span>Choose Category:</span>  
         {this.state.options}
-
-        </>
+        </div>
       );
     }
 }

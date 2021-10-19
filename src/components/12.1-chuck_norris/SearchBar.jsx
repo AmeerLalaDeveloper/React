@@ -4,10 +4,10 @@ class SearchBar extends React.Component{
     render(){
         return (
             <>
-            <form type="submit" onSubmit={
+            <form type="submit" id="myForm" onSubmit={
                 (e)=>{
                     e.preventDefault()    
-                this.props.submit(e.target.lastChild.value)
+                this.props.submit('?query='+e.target.lastChild.value)
             }}>
                 <input type="text" name="userInput" id="userInput"
                 onChange={(e)=>{     
