@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+  flex-direction: column;
 }
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
