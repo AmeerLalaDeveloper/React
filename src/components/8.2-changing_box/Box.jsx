@@ -1,30 +1,30 @@
 import React from "react";
 class Box extends React.Component{
-    state={startChange:false , counter:0 ,color:'red' ,radius:'0'}
+    state={startChange:false , index:0 ,color:'red' ,radius:'0'}
    
     componentDidMount(){
         this.setState({startChange:!this.state.startChange,
-        counter:this.state.counter+1})
+        index:this.state.index+1})
     }
     shouldComponentUpdate(){
-        if(this.state.counter==6){
+        if(this.state.index==6){
         return false;
         }
         return true
     }
     
     componentDidUpdate(){
-          if(this.state.counter<5){
+          if(this.state.index<5){
          const colors=['blue','green','purple','yellow','black']
         setTimeout(()=>{
-            this.setState({color:colors[this.state.counter],
-            counter:this.state.counter+1})
+            this.setState({color:colors[this.state.index],
+            index:this.state.index+1})
         },500)
     }
-    if(this.state.counter==5){
+    if(this.state.index==5){
         setTimeout(()=>{
         this.setState({radius:'50%'})
-        this.setState({counter:this.state.counter+1})
+        this.setState({index:this.state.index+1})
         },500)
     }
     }

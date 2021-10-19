@@ -8,7 +8,8 @@ import './App.css';
 // import Box from './components/7.2-hide_and_seek/Box';
 // import LifeCycleMethods from './components/8.1.1-life-cycle-methods/LifeCycleMethods';
 // import BoxAnimation from './components/8.1.2-box_animation/BoxAnimation'
-import Box from './components/8.2-changing_box/Box';
+// import Box from './components/8.2-changing_box/Box';
+import Spinner from './components/9.1-spinner/Spinner';
 function App() {
 
   return (
@@ -30,7 +31,8 @@ function App() {
     {/* <Box></Box> */}
     {/* <LifeCycleMethods/> */}
     {/* <BoxAnimation></BoxAnimation> */}
-    <Box></Box>
+    {/* <Box></Box> */}
+    <Spinner></Spinner>
     </div>
   );
 }

@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #bedf2f; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.dots-1 {
+  width: 50px;
+  height: 12px;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0 0/33%
+    100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: d1 1s steps(4) infinite;
+}
+@keyframes d1 {
+  to {
+    clip-path: inset(0 -34% 0 0);
+  }
+}
+
+.spinner-2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: lightblue;
+  border-right-color: orange;
+  animation: s2 1s infinite linear;
+}
+@keyframes s2 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.progress-7 {
+  width: 120px;
+  height: 24px;
+  -webkit-mask: radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25%
+      100%,
+    linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px)
+      no-repeat;
+  background: linear-gradient(#25b09b 0 0) left/0% 100% no-repeat #ddd;
+  animation: p7 2s infinite linear;
+}
+@keyframes p7 {
+  100% {
+    background-size: 100% 100%;
+  }
+}
