@@ -5,7 +5,10 @@ import './App.css';
 // import Card from './components/4.2-cards/Card';
 // import Buttons from './components/4.2-cards/Buttons';
 // import Counter from './components/7.1-increment/Counter'
-import Box from './components/7.2-hide_and_seek/Box';
+// import Box from './components/7.2-hide_and_seek/Box';
+// import LifeCycleMethods from './components/8.1.1-life-cycle-methods/LifeCycleMethods';
+// import BoxAnimation from './components/8.1.2-box_animation/BoxAnimation'
+import Box from './components/8.2-changing_box/Box';
 function App() {
 
   return (
@@ -24,6 +27,9 @@ function App() {
          <Buttons></Buttons>
           </Card> */}
     {/* <Counter></Counter> */}
+    {/* <Box></Box> */}
+    {/* <LifeCycleMethods/> */}
+    {/* <BoxAnimation></BoxAnimation> */}
     <Box></Box>
     </div>
   );

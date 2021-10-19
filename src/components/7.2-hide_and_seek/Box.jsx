@@ -30,8 +30,7 @@ class Box extends React.Component{
     }
     render(){
         return(
-          <div className="container">
-       <button onClick={this.setClick}>Show/Hide</button>
+        <div className="container"><button onClick={this.setClick}>{this.state.isClicked?'Hide':'Show'}</button>
      {
      !this.state.isClicked?
      <div className='box'></div>:
