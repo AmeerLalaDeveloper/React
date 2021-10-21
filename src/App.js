@@ -10,7 +10,10 @@ import './App.css';
 // import BoxAnimation from './components/8.1.2-box_animation/BoxAnimation'
 // import Box from './components/8.2-changing_box/Box';
 // import Spinner from './components/9.1-spinner/Spinner';
-import ChuckNorris from './components/12.1-chuck_norris/ChuckNorris';
+// import ChuckNorris from './components/12.1-chuck_norris/ChuckNorris';
+import Main from './components/11.1-change_color/Main'
+// import EX11_2 from './components/11.2-checkbox/EX11_2';
+// import EX11_3 from './components/11.3-formreview/EX11_3';
 function App() {
 
   return (
@@ -34,7 +37,10 @@ function App() {
     {/* <BoxAnimation></BoxAnimation> */}
     {/* <Box></Box> */}
     {/* <Spinner></Spinner> */}
-    <ChuckNorris></ChuckNorris>
+    {/* <ChuckNorris></ChuckNorris> */}
+    <Main></Main>
+    {/* <EX11_2></EX11_2> */}
+    {/* <EX11_3/> */}
     </div>
   );
 }

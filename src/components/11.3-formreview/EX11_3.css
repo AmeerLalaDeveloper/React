@@ -1,0 +1,12 @@
+.form-control {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+select {
+  display: block;
+  justify-self: flex-start;
+}
