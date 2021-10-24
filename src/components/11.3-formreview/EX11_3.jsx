@@ -1,6 +1,6 @@
 import Input from "./Input";
 import './EX11_3.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TextArea from "./textarea";
 import Select from "./Select";
 const EX11_3 = () => {
@@ -15,7 +15,20 @@ const EX11_3 = () => {
         setForm('none')
         setResult('block')
         localStorage.setItem('form',`${firstName},${lastName},${selectValue},${text}`)
+      
     }
+    useEffect(()=>{
+        if(localStorage.getItem('form')){
+           let data= localStorage.getItem('form')
+           data.split(',').forEach(item=>{
+            setFirstName(item)
+            setLastName(item)  
+            setSelect(item)
+            setText(item)  
+           })
+
+        }
+ },[])
     return ( 
         <>
         <form style ={{display:Form}} onSubmit={(e)=> onFormSubmit(e)}>  

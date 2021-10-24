@@ -11,13 +11,16 @@ import './App.css';
 // import Box from './components/8.2-changing_box/Box';
 // import Spinner from './components/9.1-spinner/Spinner';
 // import ChuckNorris from './components/12.1-chuck_norris/ChuckNorris';
-import Main from './components/11.1-change_color/Main'
+// import Main from './components/11.1-change_color/Main'
 // import EX11_2 from './components/11.2-checkbox/EX11_2';
 // import EX11_3 from './components/11.3-formreview/EX11_3';
+// import DataMsg from './components/13.1-data_messaging/DataMsg';
+import EX13_2 from './components/13.2-avatar/EX13_2';
 function App() {
 
   return (
     <div className="App">
+
       {/* <EX1></EX1> */}
         {/* <Quiz></Quiz> */}
         {/* <EX4_1 /> */}
@@ -38,9 +41,12 @@ function App() {
     {/* <Box></Box> */}
     {/* <Spinner></Spinner> */}
     {/* <ChuckNorris></ChuckNorris> */}
-    <Main></Main>
+    {/* <Main></Main> */}
     {/* <EX11_2></EX11_2> */}
-    {/* <EX11_3/> */}
+    {/* <EX11_3/>
+     */}
+     {/* <DataMsg></DataMsg> */}
+     <EX13_2/>
     </div>
   );
 }
