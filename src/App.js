@@ -1,4 +1,5 @@
 import './App.css';
+
 // import EX1 from './components/3.1-boxes/EX1'
 // import Quiz from './components/3.2-quiz/Quiz'
 // import EX4_1 from './components/4.1-buttons/EX4_1';
@@ -15,7 +16,15 @@ import './App.css';
 // import EX11_2 from './components/11.2-checkbox/EX11_2';
 // import EX11_3 from './components/11.3-formreview/EX11_3';
 // import DataMsg from './components/13.1-data_messaging/DataMsg';
-import EX13_2 from './components/13.2-avatar/EX13_2';
+// import EX13_2 from './components/13.2-avatar/EX13_2';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Header from './components/16.2-products/Header'
+import BeauitfullJacket from './components/16.2-products/BeauitfullJacket';
+import Tie from './components/16.2-products/Jeans';
+import Products from './components/16.2-products/Products';
+import Home from './components/16.2-products/Home';
+import Jeans from './components/16.2-products/Jeans'
+import StylishHat from './components/16.2-products/StylishHat';
 function App() {
 
   return (
@@ -46,7 +55,19 @@ function App() {
     {/* <EX11_3/>
      */}
      {/* <DataMsg></DataMsg> */}
-     <EX13_2/>
+     {/* <EX13_2/>
+      */}
+      <BrowserRouter>
+     
+          <Header></Header>
+          <Route path='/' exact component={Home}></Route>
+          <Route path='/products' exact component={Products}></Route>
+          <Route path='/products/jeans' exact component={Jeans}></Route>
+          <Route path='/products/tie' exact component={Tie}></Route>
+          <Route path='/products/style' exact component={StylishHat}></Route>
+          <Route path='/products/beautifulljacket' exact component={BeauitfullJacket}></Route>
+     
+      </BrowserRouter>
     </div>
   );
 }
