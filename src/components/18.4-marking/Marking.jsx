@@ -6,14 +6,8 @@ const Marking = () => {
     const [data,setData]=useState(list)
     const [selectedItems,setSelectedItems]=useState([])
     const deleteItems=()=>{
-        const arr=[]
-        console.log('selected',selectedItems);
-        data.filter((item,idx)=>{
-            if(selectedItems.indexOf(idx)==-1)
-              arr.push(item)
-        })
-        
-        setData(arr)
+       let all = data.filter((item,index) => !selectedItems.includes(index));
+        setData(all)
     }
     const setItems=(id)=>{
         console.log(id);
@@ -25,7 +19,7 @@ const Marking = () => {
             <button onClick={()=>setData(list)}>Reset</button>
             {
             data.map((listItem,idx)=>{
-               return <Box key={idx} boxName={listItem} id={idx} setItems={setItems} ></Box>
+               return <Box key={idx} boxName={listItem} id={idx} setItems={setItems}></Box>
 
             })}
         </div>
