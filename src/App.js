@@ -25,9 +25,9 @@ import './App.css';
 // import Home from './components/16.2-products/Home';
 // import Jeans from './components/16.2-products/Jeans'
 // import StylishHat from './components/16.2-products/StylishHat';
-// import Text from './components/18.1-text/Text';
+import Text from './components/18.1-text/Text';
 // import Todo from './components/18.2-simple-todo/Todo';
-import Marking from './components/18.4-marking/Marking';
+// import Marking from './components/18.4-marking/Marking';
 
 function App() {
 
@@ -72,9 +72,9 @@ function App() {
           <Route path='/products/beautifulljacket' exact component={BeauitfullJacket}></Route>
      
       </BrowserRouter> */}
-      {/* <Text text="asgasgasgsa" len="4"></Text> */}
+      <Text text="asgasgasgsa" len="2"></Text>
       {/* <Todo></Todo> */}
-      <Marking></Marking>
+      {/* <Marking></Marking> */}
     
     </div>
   );
