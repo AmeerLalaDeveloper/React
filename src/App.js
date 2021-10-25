@@ -17,14 +17,18 @@ import './App.css';
 // import EX11_3 from './components/11.3-formreview/EX11_3';
 // import DataMsg from './components/13.1-data_messaging/DataMsg';
 // import EX13_2 from './components/13.2-avatar/EX13_2';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Header from './components/16.2-products/Header'
-import BeauitfullJacket from './components/16.2-products/BeauitfullJacket';
-import Tie from './components/16.2-products/Jeans';
-import Products from './components/16.2-products/Products';
-import Home from './components/16.2-products/Home';
-import Jeans from './components/16.2-products/Jeans'
-import StylishHat from './components/16.2-products/StylishHat';
+// import { BrowserRouter, Route } from 'react-router-dom';
+// import Header from './components/16.2-products/Header'
+// import BeauitfullJacket from './components/16.2-products/BeauitfullJacket';
+// import Tie from './components/16.2-products/Jeans';
+// import Products from './components/16.2-products/Products';
+// import Home from './components/16.2-products/Home';
+// import Jeans from './components/16.2-products/Jeans'
+// import StylishHat from './components/16.2-products/StylishHat';
+// import Text from './components/18.1-text/Text';
+// import Todo from './components/18.2-simple-todo/Todo';
+import Marking from './components/18.4-marking/Marking';
+
 function App() {
 
   return (
@@ -57,7 +61,7 @@ function App() {
      {/* <DataMsg></DataMsg> */}
      {/* <EX13_2/>
       */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
      
           <Header></Header>
           <Route path='/' exact component={Home}></Route>
@@ -67,7 +71,11 @@ function App() {
           <Route path='/products/style' exact component={StylishHat}></Route>
           <Route path='/products/beautifulljacket' exact component={BeauitfullJacket}></Route>
      
-      </BrowserRouter>
+      </BrowserRouter> */}
+      {/* <Text text="asgasgasgsa" len="4"></Text> */}
+      {/* <Todo></Todo> */}
+      <Marking></Marking>
+    
     </div>
   );
 }
